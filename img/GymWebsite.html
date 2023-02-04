@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotClub Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'PT Sans', sans-serif;
+        }
+        
+        html,body{
+            height: 100%;
+            
+            background-image: url(img/gym.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .NavLeft{
+            /* border: solid 2px red; */
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            top: 20px;
+            text-align: center;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            line-height: 0px;
+            /* filter: invert(); */
+            
+        }
+        .NavLeft img{
+            /* filter: invert(); */
+            height: 150px;  
+            
+           
+        }
+        
+        .NavMid{
+            /* border: solid 2px rgb(255, 208, 0); */
+            display: block;
+            width: 60%;
+            margin: 20px auto;
+        }
+        .NavRight{
+            /* border: solid 2px rgb(51, 0, 255); */
+            display: inline;
+            position: absolute;
+            right: 0px;
+            top: 20px;
+            width: 20%;
+        }
+        .NavBar{
+            padding: 20px;
+            border-top-right-radius:  45px;
+            border-top-left-radius:  45px;
+            background: linear-gradient(rgba(0, 0, 0, 0.279) 0%, transparent 100%);
+            text-align: center;
+        }
+        .NavBar li{
+            display: inline-block;
+            color: rgba(4, 4, 3, 0.715);
+        }
+        .NavBar li a{
+            color: beige;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 20px;
+            cursor: pointer;
+            /* color: rgb(0, 0, 0); */
+        }
+        .NavBar li a:hover{
+            text-decoration: none;
+            font-size: 25px;
+            padding: 20px;
+            cursor: pointer;
+            color: rgb(255, 108, 108);
+        }
+        .NavRight{
+            text-align: center;
+            max-width: fit-content;
+            position: fixed;
+            top: 400px;
+            right: 0px;
+            
+        }
+        .NavRight .btn{
+            display: block;
+            border-radius: 50%
+            
+            
+        }
+        
+        .NavRight .btn :hover{
+            display: block;
+            filter: invert();
+            cursor: pointer;
+            
+        }
+        
+        .NavRight .btn img{
+            padding: 10px;
+            margin: 0px;
+            width: 50px;
+            
+        }
+        .NavRight .btn img :hover{
+            padding: 100px;
+            margin: 10px;
+            
+            
+        }
+        #sale{
+            border: 2px solid white;
+            border-radius: 10px;
+            text-decoration: wavy;
+            text-align: center;
+            position: absolute;
+            right: 10px;
+            top: 280px;
+            width: 20%;
+            display: inline block;
+            color: rgb(255, 108, 108);
+            position: fixed;
+        }
+        form{
+            top: 400px;
+            position: static;
+            display: inline block;
+            margin: 200px 100px;
+            left: 1000px;
+            width: 53%;
+            /* border:  2px solid saddlebrown; */
+            padding: 30px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 20px;
+            
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+            text-align: center;
+           
+        }
+        div form label{
+            background: linear-gradient(rgb(79, 79, 79) 0%, transparent 60%);
+            border-radius: 20%;
+        }
+        div form input{
+            background: linear-gradient(rgb(79, 79, 79) 0%, transparent 50%);
+
+        }
+        div form h2{
+            background: linear-gradient(rgb(79, 79, 79) 0%, transparent 50%);
+            text-align: center;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+        
+        
+        
+        </Style>
+</head>
+<body>
+    <div class="bgimage"></div>
+    <div class="NavLeft"> 
+        <img src="img/logo.png" alt="logo">   
+        <div>HotClub Fitness </div> 
+    </div>
+    
+    <div class="NavMid">
+        <ul class="NavBar">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About us</a></li>
+            <li> <a href="#">Fitness Calculator</a></li>
+            <li> <a href="#">Contact Us</a></li>
+            
+        </ul>
+    </div>
+    
+    <div class="NavRight">
+        <div class="btn"><img src="img/fb.png" alt="Fb connect"></div>
+        <div class="btn"><img src="img/ig.png" alt="Ig connect"></div>
+    </div>
+    <div id="sale">
+        Sign-up before end of this month to get flat 20% discount and additional coupons.
+    </div>
+
+    <div class="custInfo">
+        <form action="customerInformation.java">
+            <h2>Join now!!!</h2>
+            <label for="name" >Name</label>
+            <div>
+                <input type="text" placeholder="your full name"> 
+            </div>
+            <label for="Contact" >Contact</label>
+            <div>
+                <input type="number" placeholder="your mobile number" > 
+            </div>
+            <label for="email" >Email</label>
+            <div>
+                <input type="email" placeholder="your email Address"> 
+            </div>
+            <label for="Home" >Home</label>
+            <div>
+                <input type="text" placeholder="your home address"> 
+            </div>
+            <div>
+                <input type="radio" > male
+                <input type="radio" > female
+            </div>
+            <div>
+                <input type="number" placeholder="your age"> 
+            </div>
+            <label for="plan" >Subscription plan</label>
+            <div>
+                <input type="radio">3months
+                <input type="radio">6months
+                <input type="radio">9months
+            </div>
+            <label for="Home" >Home</label>
+            <div>
+                <input type="text" placeholder="your Address"> 
+            </div>
+            
+
+
+        </div>
+        
+    </form>
+        
+</body>
+    
+</body>
+</html>
